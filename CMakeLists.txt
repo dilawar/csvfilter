@@ -10,3 +10,7 @@ target_link_libraries(csvfilter ${Boost_LIBRARIES} )
 install( TARGETS csvfilter
     RUNTIME DESTINATION bin
     )
+
+# tests
+enable_testing( )
+add_test( NAME sanity COMMAND ./test.sh )
